@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAMS | Home </title>
+  <link rel="icon" href="./Resources/icon.png" type="x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    .icon-square {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.75rem;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navigation-->
+  <header class="p-3 pb-5 text-bg-dark">
+    <div>
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="./Home2.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="./Resources/icon.png" alt="Icon" height="50">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="./Home2.html" class="nav-link px-2 text-secondary-blue"><b>Home</b></a></li>
+          <li><a href="#features" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">About</a></li>
+          <li><a href="#" class="nav-link px-2 text-white" data-bs-toggle="modal" data-bs-target="#secondModal">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+            <form class="w-100 me-3" role="search">
+              <input type="search" class="form-control" placeholder="Search Something..." aria-label="Search">
+            </form>
+    <!-- Profile Dropdown -->
+            <div class="flex-shrink-0 dropdown">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./Resources/User_img.png" alt="profile Image" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small shadow">
+                <!-- <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li> -->
+                <li><a class="dropdown-item" href="./Dashboard.html">Profile</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Home Starting-->
+  <div class="container">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./Resources/Home Farmer.jpg" class="d-block mx-lg-auto img-fluid" alt="Farmer With Two Bulls"
+          width="500" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Farmer Live Agri Marketing System - Bridge</h1>
+        <p class="lead">FLAMS Bridge is a Innovative digital platform that aims to remove Middleman from
+          Agricultural trade, Empowering Farmers, Industries and Consumers with a Safe and User-Friendly
+          Marketplace.</p><br />
+        <a href="#" style="text-decoration: none;"><div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="0ibqq8">Go To App</button>
+        </div></a>
+      </div>
+    </div>
+  </div>
+
+  <!--Contact Modal -->
+  <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="secondModalLabel">Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="mailto:flamsbridge@gmail.com"><img src="./Resources/icons8-email-100.png" alt="Mail" height="30" />
+            Email Us</a>
+          <br />
+          <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="https://instagram.com/flams.bridge" target="_blank"><img src="./Resources/icons8-instagram-96.png"
+              alt="Instagram" height="30" /> Follow us on Instagram</a>
+          <br />
+          <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="tel:+911234567890"><img src="./Resources/icons8-ringer-volume-100.png" alt="Phone" height="30" /> Call
+            Us - Currently Unavailable</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome Notification-->
+  <div id="welcomeToast" class="toast align-items-center text-white bg-success border-0" role="alert"
+    aria-live="assertive" aria-atomic="true" style="
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1055;">
+    <div class="d-flex">
+      <div class="toast-body">👋 Welcome to the website!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">FLAMS | About</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          🔹Our mission is to empower farmers, simplify the supply chain and promote transparency in agricultural
+          marketing.
+          <hr />
+          🔹We connect the farmers dirctly with industries and customers, eliminating middlemen and ensuring fair
+          pricing.
+          <hr />
+          🔹A dedicated mobile app for farmers and customers, and a web portal for industries to manage procurement
+          efficiently.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="background-color: blue;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Features-->
+  <div id="features">
+   <div class="container">
+    <h2 class="pb-2 border-bottom">🕺 OUR FEATURES </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="./Resources/Tri-platform.svg" alt="Tri-platform" height="30" style="background-color: white;">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Tri-Platform Ecosystem </h3><br />
+          <p>Separate interfaces for farmers, industries, and consumers, facilitating mass sales, retail buying, and
+            supply-chain optimization.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="./Resources/link.svg" alt="linkage" height="30" style="background-color: white;">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Direct Farmer-Buyer & Industry Linkage</h3><br />
+          <p>Produce is sold and inputs (fertilizers, seeds, livestock inputs) are bought by farmers without
+            intermediaries.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="./Resources/Voice.svg" alt="voice assistance" height="30" style="background-color: white;">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Voice And Video Assistance</h3><br />
+          <p>Multi-lingual assistance for non-literate customers, video negotiation, and text-to-speech efficiently in
+            our official application.</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+   </div>
+  </div>
+
+   <!--Purchasing Products-->
+   <div class="container mt-5">
+    <h2 class="pb-2 border-bottom">Products - Organic Fertilizers</h2>
+
+    <div id="productContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Humic Acid.png" alt="Humic Acid">
+          <div class="card-body text-center">
+            <p class="card-text h5">Humic Acid</p>
+            <p class="card-text">Price: ₹390</p>
+            <p class="card-text">Quantity: 400gm</p>
+            <p class="card-text">Improve Soil Health By Enhancing Structure, Nutrient Availability, and Root Development.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+            <img src="./Resources/Products/Cow Manure.png" alt="Cow Manure">
+          <div class="card-body text-center">
+            <p class="card-text h5">Cow Manure</p>
+            <p class="card-text">Price: ₹180</p>
+            <p class="card-text">Quantity: 2Kg</p>
+            <p class="card-text">Natural Fertilizer, Imporves Soil Areation and Water Retention For Healthy Plant Growth.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Spinach Seeds.png" alt="Spinach Seeds">
+          <div class="card-body text-center">
+            <p class="card-text h5">Spinach Seeds</p>
+            <p class="card-text">Price: ₹99</p>
+            <p class="card-text">Quantity: 16gm</p>
+            <p class="card-text">It Intended For Growing Spinach Seeds, Selected For Good Gramination and Yield.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Bonemeal Fertilizer.png" alt="Bonemeal Fertilizer">
+          <div class="card-body text-center">
+            <p class="card-text h5">Bonemeal Fertilizer</p>
+            <p class="card-text">Price: ₹1549</p>
+            <p class="card-text">Quantity: 50Kg</p>
+            <p class="card-text">Bonemeal is a Natural Source of Phosphorus and Calcium, Used For Strong Root Develop.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Green Plus Agro.png" alt="Green Plus Agro">
+          <div class="card-body text-center">
+            <p class="card-text h5">Green Plus Agro</p>
+            <p class="card-text">Price: ₹250</p>
+            <p class="card-text">Quantity: 1Kg</p>
+            <p class="card-text">Agro Fertilizer, Contains a Blend of Nitrogen, Phosphorus, Potassium(NPK).</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+            <img src="./Resources/Products/Poultry Starter.png" alt="Poultry Starter">
+          <div class="card-body text-center">
+            <p class="card-text h5">Poultry Starter</p>
+            <p class="card-text">Price: ₹7936</p>
+            <p class="card-text">Quantity: 40Lb</p>
+            <p class="card-text">Formulated To Povide Essential Nutrients For Laying Hens In a Compost-based Form.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+            <img src="./Resources/Products/Fish Fertilizer.png" alt="Fish Fertilizer">
+          <div class="card-body text-center">
+            <p class="card-text h5">Fish Fertilizer</p>
+            <p class="card-text">Price: ₹449</p>
+            <p class="card-text">Quantity: 3.7L</p>
+            <p class="card-text">A Liquid Concentrate Derived From Fish Byproducts For Plant Growth, Soil Health.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+            <img src="./Resources/Products/Chicken Manure.png" alt="Chicken Manure">
+          <div class="card-body text-center">
+            <p class="card-text h5">Chicken Manure</p>
+            <p class="card-text">Price: ₹20</p>
+            <p class="card-text">Quantity: 1Kg</p>
+            <p class="card-text">All Natural Plant Food, Processed For Easier Handling Application in Gardens.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Agromin Gold.png" alt="Agromin Gold">
+          <div class="card-body text-center">
+            <p class="card-text h5">Agromin Gold</p>
+            <p class="card-text">Price: ₹805</p>
+            <p class="card-text">Quantity: 1Kg</p>
+            <p class="card-text">A Micronutrient Fertilizer, Designed To Provide Trace Element For Overall Health.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Gacil Seaweed Extract.png" alt="Gacil Seaweed Extract">
+          <div class="card-body text-center">
+            <p class="card-text h5">Gacil Seaweed Extract</p>
+            <p class="card-text">Price: ₹1350</p>
+            <p class="card-text">Quantity: 5L</p>
+            <p class="card-text">A Liquid Product Used As a Biostimulant or Bio-Fertilizer For Plant's Stress Tolernce.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Organic Marine Nutrient.png" alt="Organic Marine Nutrient">
+          <div class="card-body text-center">
+            <p class="card-text h5">Organic Marine Nutrient</p>
+            <p class="card-text">Price: ₹560 </p>
+            <p class="card-text">Quantity: 1L</p>
+            <p class="card-text">An Organic Fertilizer Derived From Marine Sources, Provide Carbon and Other Sources.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col product-card" style="display: none;">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Phosphate Solubilizing Bacteria.png" alt="Phosphate Solubilizing Bacteria">
+          <div class="card-body text-center">
+            <p class="card-text">Phosphate Solubilizing Bacteria</p>
+            <p class="card-text">Price: ₹728</p>
+            <p class="card-text">Quantity: 1Kg</p>
+            <p class="card-text">PhotoSynthetic Bacteria Are Micro Organisms Used In Agriculture As Bio-Fertilizers.</p>
+            <button type="button" class="btn btn-outline-success"><img src="./Resources/Buy.svg" alt="Buy Icon"> Buy Now</button>
+            <button type="button" class="btn btn-outline-primary"><img src="./Resources/Sell.svg" alt="Sell Icon"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button id="seeMoreBtn" class="btn btn-outline-info">See More</button>
+    </div><hr/>
+  </div><br/>
+
+  <!--Fruits and vegetables-->
+  <div class="container mt-5">
+    <h2 class="pb-2 border-bottom">Products - Fruits | Vegetables</h2>  
+    <div id="fruitContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Apple.png" alt="Apple" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Apple</p>
+            <p class="card-text">Price: ₹120/Kg</p>
+            <p class="card-text">Fresh, Juicy and Hand-Picked Apples Straight From Himachal Farms.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Mango.png" alt="Mango" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Mango</p>
+            <p class="card-text">Price: ₹100/Kg</p>
+            <p class="card-text">Delicious Alphonso Mangoes, Summer's Best Delight.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Orange.png" alt="Orange" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Orange</p>
+            <p class="card-text">Price: ₹60/Kg</p>
+            <p class="card-text">Citrusy Goodness, Loaded With Vitamin C for Immunity.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Water Melon.png" alt="Watermelon" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Water Melon</p>
+            <p class="card-text">Price: ₹30/Kg</p>
+            <p class="card-text">Hydrating, Sweet and Refreshing Summer.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Papaya.png" alt="Papaya" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Papaya</p>
+            <p class="card-text">Price: ₹40/Kg</p>
+            <p class="card-text">Rich Enzymes, Great For Digestion and Skin.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Pomegranate.png" alt="Pomegranate" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Pomegranate</p>
+            <p class="card-text">Price: ₹90/Kg</p>
+            <p class="card-text">Heart-Healthy and Antioxidant-Rich Fruit.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Tomatos.png" alt="Tomatos" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Tomatos</p>
+            <p class="card-text">Price: ₹15/Kg</p>
+            <p class="card-text">Fruit Botanically, Used As Vegetable, Good Source in Iycopane.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+          <div class="card shadow-sm">
+            <img src="./Resources/Products/Ladis Finger.png" alt="Ladis Finger" class="card-img-top">
+            <div class="card-body text-center">
+             <p class="card-text h5">Ladis Finger</p>
+             <p class="card-text">Price: ₹50/Kg</p>
+             <p class="card-text">Good Source of Fiber And Vitamins, Often Healthy Addition To Diet.</p>
+             <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+             <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Brinjal.png" alt="Brinjal" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Brinjal</p>
+            <p class="card-text">Price: ₹60/Kg</p>
+            <p class="card-text">High Nutrition, Versatile Ingredient Used in Various Dishes.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Onoin.png" alt="Onion" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Onion</p>
+            <p class="card-text">Price: ₹45/Kg</p>
+            <p class="card-text">Onion Are a Staple in Many Cuisins worldwide, Bulbous Plant, Pungent Aroma.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Potatos.png" alt="Potatos" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Potatos</p>
+            <p class="card-text">Price: ₹60/Kg</p>
+            <p class="card-text">Good Source of Carbohydrate, Fiber, Starch And Vitamins.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col fruit-card d-none">
+        <div class="card shadow-sm">
+          <img src="./Resources/Products/Carrot.png" alt="Carrot" class="card-img-top">
+          <div class="card-body text-center">
+            <p class="card-text h5">Carrot</p>
+            <p class="card-text">Price: ₹90/Kg</p>
+            <p class="card-text">Good At Beta-Carotene, Dietary Fiber and Antioxidants.</p>
+            <button class="btn btn-outline-success"><img src="./Resources/Buy.svg"> Buy Now</button>
+            <button class="btn btn-outline-primary"><img src="./Resources/Sell.svg"> Sell Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="text-center mt-4">
+    <button id="seeMoreFruitsBtn" class="btn btn-outline-info">See More</button>
+  </div><hr/>
+</div><br/>
+
+  <!--Carousel-->
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Resources/Carousel1.jpg" class="d-block w-100" alt="Fresh And Pure Products">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <p>Buyers & Industries get access to Fresher Produce at Competitive Prices with Clear Sourcing.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Resources/Carousel2.jpg" class="d-block w-100" alt="Government & Agri-Bodies">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <p>Government & Agri-Bodies get Data-driven inputs for Policy Formulation.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Resources/Carousel3.jpg" class="d-block w-100" alt="Organic certifications">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <p>Sustainability is encouraged through Eco-packaging, Organic Certifications, and Carbon Footprint
+              Monitoring.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+        <img src="./Resources/icon.png" alt="FLAMS Icon" height="50">
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary"><b><i>&copy; 2025 FLAMS-Bridge.</i></b></span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="https://whatsapp.com/channel/0029Vb5lFmJ0wajpG5zeUJ03" target="_blank"><img
+            src="./Resources/Whatsapp.jpg" alt="Whatsapp" style="border-radius: 5px;" height="45" /></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://instagram.com/flams.bridge" target="_blank"><img
+            src="./Resources/icons8-instagram-96.png" alt="Instagram" height="53" /></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="mailto:flamsbridge@gmail.com"><img
+            src="./Resources/icons8-email-100.png" alt="Mail" height="46" /></a></li>
+    </ul>
+  </footer>
+
+  <!--JAVASCRIPT BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <!--JS For Toast-->
+  <script>
+    window.addEventListener("load", function () {
+      const toastEl = document.getElementById("welcomeToast");
+      const toast = new bootstrap.Toast(toastEl, {
+        delay: 3000,
+        autohide: true,
+      });
+      toast.show();
+    });
+  </script>
+
+    <!--JS For Products-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const cards = document.querySelectorAll('.product-card');
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+        const perClick = 3;
+        let visible = 0;
+  
+        function showMoreProducts() {
+          const isSeeLess = seeMoreBtn.textContent === "See Less";
+          if (isSeeLess) {
+            cards.forEach((card, index) => {
+              card.style.display = index < 3 ? 'block' : 'none';
+            });
+            visible = 3;
+            seeMoreBtn.textContent = "See More";
+          } else {
+            for (let i = visible; i < visible + perClick && i < cards.length; i++) {
+              cards[i].style.display = 'block';
+            }
+            visible += perClick;
+            if (visible >= cards.length) {
+              seeMoreBtn.textContent = "See Less";
+            }
+          }
+        }
+  
+        cards.forEach((card, index) => {
+          card.style.display = index < 3 ? 'block' : 'none';
+        });
+        visible = 3;
+        seeMoreBtn.addEventListener('click', showMoreProducts);
+      });
+    </script>
+  
+  <!--JS For Fruit-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const fruitCards = document.querySelectorAll(".fruit-card");
+      const seeMoreBtn = document.getElementById("seeMoreFruitsBtn");
+      let visibleCount = 0;
+      const increment = 3;
+  
+      function showNextFruits() {
+        if (seeMoreBtn.innerText === "Show Less") {
+          fruitCards.forEach((card, index) => {
+            if (index < 3) {
+              card.classList.remove("d-none");
+            } else {
+              card.classList.add("d-none");
+            }
+          });
+          visibleCount = 3;
+          seeMoreBtn.innerText = "See More";
+          return;
+        }
+        for (let i = visibleCount; i < visibleCount + increment && i < fruitCards.length; i++) {
+          fruitCards[i].classList.remove("d-none");
+        }
+        visibleCount += increment;
+        if (visibleCount >= fruitCards.length) {
+          seeMoreBtn.innerText = "Show Less";
+        }
+      }
+      showNextFruits();
+      seeMoreBtn.addEventListener("click", showNextFruits);
+    });
+  </script>
+  
+</body>
+
+</html>

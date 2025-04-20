@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMS | Tenders</title>
+    <link rel="icon" href="./Resources/icon.png" type="x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Tender About -->
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>About</h4>
+          <p class="text-body-secondary">Tenders in FLAMS-Bridge are special purchase requests created by industries for bulk buying of agricultural products. These tenders specify the product type, required quantity, quality standards, and delivery timeline. Once a tender is posted, the FLAMS team evaluates and forwards it to eligible farmers. Farmers then produce and supply the goods as per the tender terms. This system ensures organized large-scale transactions and benefits both industries and farmers through planned production and assured sales.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://instagram.com/flams.bridge" class="text-white">Follow on Instagram</a></li>
+            <li><a href="https://whatsapp.com/channel/0029Vb5lFmJ0wajpG5zeUJ03" class="text-white">Join Whatsapp Channel</a></li>
+            <li><a href="mailto:flamsbridge@gmail.com" class="text-white">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="./Resources/icon.png" alt="flams logo" height="30" style="padding-right: 5px;">
+        <strong>FLAMS - Tenders</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- Tender Inputs -->
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Welcome To FLAMS Tenders</h1>
+        <p class="lead text-body-secondary" style="font-size: 18px;">Big orders? No problem! Industries raise tenders, farmers grow what's needed, and FLAMS-Bridge makes the farm-to-factory journey smooth and secure.</p>
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Raise & Upload Tender</a>
+          <a href="#" class="btn btn-secondary my-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="liveToastBtn">Submit Tender</a>
+        </p>
+        <!-- File Upload Collapse -->
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                </div>
+            </div>
+        </div>
+        <!-- Notification Div -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="./Resources/icon.png" class="rounded me-2" alt="flams-icon" height="15">
+                <strong class="me-auto">FLAMS - Tender</strong> 
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Tender submitted successfully.
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Recent Tenders Section -->
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        <h1>Recent Tenders</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Resources/Tender 1.jpg" alt="tender img 1">
+            <div class="card-body">
+                <h6 style="font-weight: bold; text-align: center;">AgriFresh Pvt. Ltd.</h6>
+              <p class="card-text">Tender Description - Recruitment for 50 tones of organic tomatoes, Grade A quality. Delivery needed within 30 days to Coimbatore, Tamil Nadu. Packaging should follow eco-standards.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-success">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Resources/Tender 2.jpg" alt="tender img 2">
+            <div class="card-body">
+                <h6 style="font-weight: bold; text-align: center;">GreenHarvest Industries</h6>
+              <p class="card-text">Tender Description - Looking to procure your 10,000 kg of high-quality Basmati Rise. Delivery expected within 20 days to Hyderabad, Telangana. Must meet export-grade standards.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-success">View</button>
+                  <button type="button" class="btn btn-outline-secondary" disabled>Edit</button>
+                </div>
+                <small class="text-body-secondary">32 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./Resources/Tender 3.jpg" alt="tender img 3">
+            <div class="card-body">
+                <h6 style="font-weight: bold; text-align: center;">FreshRoots Organic Ltd.</h6>
+              <p class="card-text">Tender Description - Need 5,000 kg of certified organic carrot's cleaned and packed. Delivery to Bengaluru cold storage unit within 12 days. Prefer produce from Karnataka farmers.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-success">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Edit</button>
+                </div>
+                <small class="text-body-secondary">1 hour ago </small>
+              </div>
+            </div>
+          </div>
+        </div>
+</main>
+
+<footer class="text-body-secondary py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <span class="mb-3 mb-md-0 text-body-secondary"><b><i>&copy; 2025 FLAMS-Bridge.</i></b></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+ 
+<!-- Notification Js For Tender Submit-->
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAMS Bridge | Welcome</title>
+  <link rel="icon" href="./Resources/icon.png" type="x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <style>
+    #GetStarted {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-image: url('./Resources/Getstarted\ bg\ landscape.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(0.5px);
+      -webkit-backdrop-filter: blur(0.5px);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Menu Icon Dropdown -->
+  <div class="dropdown">
+    <a href="#"
+      class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none dropdown-toggle"
+      data-bs-toggle="dropdown" aria-expanded="false" aria-label="FLAMS Icon">
+      <img src="./Resources/icon.png" alt="Flams Icon" height="50">
+      </img>
+    </a>
+    <ul class="dropdown-menu text-small shadow">
+      <li><a class="dropdown-item active" href="./Home.html" aria-current="page">Get Started</a></li>
+      <li><a class="dropdown-item" href="./Home.html">Home</a></li>
+      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#firstModal">About</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#secondModal">Contact</a></li>
+      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#thirdModal">Queries</a></li>
+    </ul>
+  </div>
+
+  <!-- Get Started -->
+  <div id="GetStarted">
+    <div class="card text-center" style="width: 30rem;">
+      <img src="./Resources/icon.png" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h4 class="card-title">Farmer Live Agri Marketing System</h4>
+        <p class="card-text text-center">It is a digital revolution connecting farmers and users directly, prompting
+          fair , technological empowerment, and agricultural development.</p>
+        <a href="./Home.html" class="btn btn-primary ">Get Started ➡️</a>
+      </div>
+    </div>
+  </div>
+
+  <!--About Modal -->
+  <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="firstModalLabel">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          FLAMS Bridge is a Innovative digital platform that aims to remove Middleman from
+          Agricultural trade, Empowering Farmers, Industries and Consumers with a Safe and User-Friendly
+          Marketplace.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Contact Modal -->
+  <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="secondModalLabel">Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="mailto:flamsbridge@gmail.com"><img src="./Resources/icons8-email-100.png" alt="Mail" height="30" />
+            Email Us</a>
+          <br />
+          <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="https://instagram.com/flams.bridge" target="_blank"><img src="./Resources/icons8-instagram-96.png"
+              alt="Instagram" height="30" /> Follow us on Instagram</a>
+          <br />
+          <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="tel:+911234567890"><img src="./Resources/icons8-ringer-volume-100.png" alt="Phone" height="30" /> Call
+            Us - Currently Unavailable</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Queries Modal -->
+  <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="thirdModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="thirdModalLabel">Queries</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Available Soon
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
